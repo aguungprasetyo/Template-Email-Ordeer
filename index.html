@@ -1,11 +1,134 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #EEF4F8;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .header{
+            text-align: center;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        span {
+            font-weight: bold;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        th:first-child, td:first-child{
+            text-align: left;
+        }
+        
+        th:last-child, td:last-child{
+            text-align: right;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            color: #333;
+        }
+
+        p {
+            margin: 0;
+            font-size: 0.8rem;
+            color: #555;
+            line-height: 160%;
+        }
+
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 20px 0;
+            color: #ffffff;
+            background-color: #007bff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .my {
+            margin: 16px 0;
+        }
+
+        @media (min-width: 600px) {
+            
+            .header, .container {
+                padding: 40px;
+            }
+
+
+            h1 {
+                font-size: 1.7rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="header">
+        <img src="./src/" alt="Logo Ordeer">
+    </div>
+    <div class="container">
+        <h1>Terima Kasih</h1>
+        <p>Transaksimu dengan <span style="font-weight: bold;">[store_name]</span> berhasil dilakukan, berikut adalah detail transaksimu:</p>
+
+
+        <div class="my">
+            <p><span>Status Pesanan :</span> Terbayar</p>
+            <p><span>ID Pesanan :</span> 12341234</p>
+            <p><span>Metode Pembayaran :</span> QRIS</p>
+        </div>
+
+        <table>
+            <tr>
+                <th style="border-bottom: 1px solid #e0dede;"><p>Item</p></th>
+                <th style="border-bottom: 1px solid #e0dede;"><p>Harga</p></th>
+            </tr>
+            <tr>
+                <td><p>4 x Buku</p></td>
+                <td><p>IDR 40.000</p></td>
+            </tr>
+            <tr>
+                <td><p>Ongkir: JNE REG (1000gr)</p></td>
+                <td><p>IDR 80.000</p></td>
+            </tr>
+            <tr>
+                <td><p>Asuransi</p></td>
+                <td><p>IDR 5.000</p></td>
+            </tr>
+            <tr>
+                <td><p>Total Tagihan</p></td>
+                <td><p>IDR 125.000</p></td>
+            </tr>
+        </table>
+
+        <!-- Dapat berisi redirect link ke seller sebelumnya -->
+        <a href="#">Kembali Belanja</a>
+    </div>
 </body>
 </html>
