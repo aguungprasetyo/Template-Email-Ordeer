@@ -44,6 +44,20 @@
         th:last-child, td:last-child{
             text-align: right;
         }
+        
+        tr:nth-child(1) th,
+        tr:nth-child(4) td{
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e0dede;
+        }
+
+        tr:nth-child(2) td, {
+            padding-top: 8px;
+        }
+
+        tr:nth-child(5) td {
+            padding-top: 8px;
+        }
 
         h1 {
             font-size: 1.5rem;
@@ -69,6 +83,15 @@
 
         .my {
             margin: 16px 0;
+        }
+
+        .notifikasi {
+            margin: 32px 0;
+            padding: 10px;
+            vertical-align: middle;
+            background-color: #1dcb48;
+            border-radius: 32px;
+            color: white;
         }
 
         @media (min-width: 600px) {
@@ -104,10 +127,16 @@
             <p><span>Metode Pembayaran :</span> QRIS</p>
         </div>
 
+        <!-- Notifikasi -->
+         <div class="notifikasi my">
+            <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#ffffff" style="vertical-align: middle;"><path d="m424-296 282-282-56-56-226 226-114-114-56 56 170 170Zm56 216q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg>
+            <span style="padding-left: 8px;">Pembayaran berhasil dilakukan</span>
+         </div>
+
         <table>
             <tr>
-                <th style="border-bottom: 1px solid #e0dede;"><p>Item</p></th>
-                <th style="border-bottom: 1px solid #e0dede;"><p>Harga</p></th>
+                <th><p>Item</p></th>
+                <th><p>Harga</p></th>
             </tr>
             <tr>
                 <td><p>4 x Buku</p></td>
